@@ -34,6 +34,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	}
 }
 
+.banner img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
 /*Estado de botones header*/
 .navbar-default .navbar-nav > .registrese> a,
 .navbar-default .navbar-nav > .registrese > a:hover,
@@ -48,3 +54,83 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
   color: #fff;
   background-color: #c1272d;
 }
+
+
+.content-area h1,
+.content-area h2,
+.content-area h3,
+.content-area h4,
+.content-area h5,
+.content-area h6 {
+	color: #0f1449 !important;
+	font-weight: 300;
+}
+
+
+/*carousel*/
+
+.fff{
+	background-color: #f7f7f9 !important;
+	padding:15px;
+	border-radius: 20px;
+}
+
+.thumbnails li > .fff .caption { 
+    background:#f7f7f9 !important; 
+    padding:10px
+}
+
+ul .thumbnails { 
+    margin-bottom: 0px;
+}
+
+.thumbnails{
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 0px;
+}
+
+
+/* Thumbnail Box */
+.caption h4 {
+    color: #444;
+    text-align: center;
+}
+
+.caption p {  
+    color: #999;
+    text-align: center;
+}
+
+
+
+/* Carousel Control */
+.control-box {
+    text-align: center;
+    width: 100%;
+}
+
+.btn-mini{
+	background-color: #c1272d;
+	color: #fff;
+	text-align: center;
+}
+
+
+/* Mobile Only */
+@media (max-width: 767px) {
+    .page-header, .control-box {
+        text-align: center;
+    } 
+}
+@media (max-width: 479px) {
+    .caption {
+        word-break: break-all;
+    }
+}
+
+
+li { list-style-type:none;}
+
+::selection { background: #c1272d; color: #FFFFFF; text-shadow: 0; }
+::-moz-selection { background: #c1272d; color: #FFFFFF; }
