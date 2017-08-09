@@ -126,6 +126,13 @@ function cees_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array( ), false, 'all' );
+	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/fonts/font-awesome/css/font-awesome.min.css', array( ), false, 'all' );
+	wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css', array( ), false, 'all' );
+	
+	/**wp_enqueue_script('jquery'); */
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( ), false, 'all' );
 }
 add_action( 'wp_enqueue_scripts', 'cees_scripts' );
 

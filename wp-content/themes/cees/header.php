@@ -12,45 +12,80 @@
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
+<base href="http://localhost/cees/">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="ico/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="ico/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="ico/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="ico/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="ico/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="ico/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="ico/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="ico/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="ico/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="ico/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="ico/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+	<link rel="manifest" href="ico/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="ico/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cees' ); ?></a>
-
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <div class="logo"><img src="img/logo-cees.png" class="img-responsive"></div>
+		    </div>
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cees' ); ?></button>
-			<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-			?>
-		</nav><!-- #site-navigation -->
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cursos Disponibles <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Estrategias para un desempeño exitoso en la seguridad privada</a></li>
+		            <li><a href="#">Inducción General</a></li>
+		            <li><a href="#">La seguridad como proyecto de vida</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="registrese"><a href="#"><i class="fa fa-pencil"></i> REGISTRESE</a></li>
+		        <li class="iniciar"><a href="#"><i class="fa fa-user"></i> INICIAR SESIÓN</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
 	</header><!-- #masthead -->
 
+		<!--<nav id="site-navigation" class="main-navigation">
+
+		</nav> #site-navigation -->
 	<div id="content" class="site-content">
