@@ -4,7 +4,7 @@ Template Name: Inicio
 */
 ?>
 
-<?php get_header(); ?>
+<?php get_header('login'); ?>
 <div class="banner">
 	<?php echo do_shortcode('[image-carousel category="inicio" showcaption="false"]'); ?>
 </div>

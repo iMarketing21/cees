@@ -46,6 +46,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 .navbar-default .navbar-nav > .registrese > a:focus {
   color: #fff;
   background-color: #96141d;
+  cursor: pointer;
 }
 
 .navbar-default .navbar-nav > .iniciar> a,
@@ -53,8 +54,80 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 .navbar-default .navbar-nav > .iniciar > a:focus {
   color: #fff;
   background-color: #c1272d;
+  cursor: pointer;
 }
 
+
+
+.btn-rojo{
+	background-color: #c1272d;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.btn-rojo:hover, .btn-rojo:focus{
+	background-color: #96141d;
+	color: #fff;
+	text-decoration:none;
+}
+
+.btn-azul{
+	background-color: #181d61;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	border-radius: 20px !important;
+}
+
+.btn-azul:hover, .btn-azul:focus{
+	background-color: #090d33;
+	color: #fff !important;
+	text-decoration:none;
+}
+
+
+.btn-comprar{
+	background-color: #f15a24;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	border-radius: 20px !important;
+}
+
+.btn-comprar:hover, .btn-comprar:focus{
+	background-color: #ff1d25;
+	color: #fff !important;
+	text-decoration:none;
+}
+
+.btn-gratis{
+	background-color: #009245;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	border-radius: 20px !important;
+}
+
+.btn-gratis:hover, .btn-gratis:focus{
+	background-color: #007233;
+	color: #fff !important;
+	text-decoration:none;
+}
+
+
+
+.recuperar{
+	text-align: right;
+}
+
+@media (max-width: 768px) {
+	.recuperar{
+	text-align: center;
+	margin-top: 15px;
+}
+}
 
 .content-area h1,
 .content-area h2,
@@ -117,6 +190,12 @@ ul .thumbnails {
 }
 
 
+.btn-mini:hover {
+	background-color: #0f1449;
+	color: #fff !important;
+	text-align: center;
+}
+
 /* Mobile Only */
 @media (max-width: 767px) {
     .page-header, .control-box {
@@ -134,3 +213,199 @@ li { list-style-type:none;}
 
 ::selection { background: #c1272d; color: #FFFFFF; text-shadow: 0; }
 ::-moz-selection { background: #c1272d; color: #FFFFFF; }
+
+
+/*FOOTER*/
+.site-footer{
+	background-color: #f2f2f2;
+	border-top: #0f1449 2px solid;
+	padding: 15px 0;
+	color: #b3b3b3 !important;
+}
+
+
+.site-footer .divider{
+	margin:6px 0;
+}
+
+.site-footer .autor{
+	color: #cccccc !important;
+	text-align: right;
+	margin-top: 15px;
+}
+
+/***************REDES SOCIALES ******************/
+
+
+.redes-sociales{
+margin-top: 15px;
+	}
+
+	
+	.redes-sociales span{
+		margin-right: 25px;
+	}
+	
+.redes-sociales i{
+	background-color:#386aaf;
+	color:#fff;
+	width:25px;
+	height:25px;
+	text-align:center;
+	padding:5px 0;
+	border-radius:20px;
+	}
+
+@media (max-width: 767px){
+  		.redes-sociales{
+			text-align:center;
+			margin:25px 0px 15px 0;
+		}
+	}
+
+
+/*FORMULARIOS*/
+.box-gris{
+	background-color: #F2F2F2;
+	padding: 25px;
+	border-radius: 20px;
+	margin-bottom: 20px;
+}
+
+.guarda{
+	position: relative;
+	bottom: -16px;
+	right: 5px
+}
+
+.title-form-modal{
+	text-align: center;
+	color: #181d61 !important;
+	margin:10px 0 15px 0 !important;
+}
+
+
+
+
+.titulo-curso-bg {
+  background: rgba(0,0,0,0.4) url("http://localhost/cees/wp-content/uploads/2017/08/banner-prueba-1.png") no-repeat center center;
+  background-size: cover;
+  height: 365px;
+  max-width: 100%;
+  padding: 50px 80px;
+}
+
+
+
+
+.titulo-curso h1{
+	color: #fff;
+	margin: 0 0 15px 0;
+	text-align: center;
+	font-weight: 700;
+	font-size: 50px;
+}
+
+.titulo-curso p{
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 300;
+	width: 70%;
+	margin: 0 15% 35px 15%;
+}
+
+.titulo-curso .btn-gratis{
+	font-size: 25px;
+}
+
+
+.detalles-curso{
+	background-color: #0f1449;
+	padding: 20px 0;
+	margin-bottom: 35px;
+}
+
+.detalles-curso h4{
+	color: #f42c3b;
+	text-align: center;
+}
+
+.detalles-curso p{
+	color: #fff;
+	text-align: center;
+}
+
+
+@media (max-width: 850px){
+  		.titulo-curso-bg {
+			height: auto;
+		}
+
+		.titulo-curso h1{
+			font-size: 40px;
+		}
+	}
+
+
+.nav-tabs > li {
+    width: 33.333%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.tab-pane{
+	padding: 25px;
+	font-size: 15px;
+	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	margin-bottom: 25px;
+}
+
+.tab-pane p{
+	color: #333333;
+}
+
+
+
+.curso{
+	margin: 25px 0;
+}
+
+.curso ol li{
+	list-style-type: decimal !important;
+	font-size: 15px;
+}
+
+.progress{
+	width: 70%;
+	border-radius: 20px !important;
+	margin:35px 15% 0;
+}
+
+.progress-bar{
+	background-color:#009245 !important;
+}
+
+.title-modulo{
+	background-color: #f2f2f2;
+	padding: 10px;
+	border-radius: 20px;
+	margin-bottom: 15px;
+	font-size: 18px;
+	margin-top: 25px;
+}
+
+.aprobado{
+	color: #009245;
+	text-align: center;
+}
+
+.no-aprobado{
+	color: #c1272d;
+	text-align: center;
+}
+

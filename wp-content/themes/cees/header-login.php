@@ -76,8 +76,15 @@
 		        </li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
-		     	<?php include 'valida-registro.php';?>
-		     	<?php include 'iniciar-sesion.php';?>
+		     	<li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mis Cursos <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Inducción General</a></li>
+		            <li><a href="#">La seguridad como proyecto de vida</a></li>
+		          </ul>
+		        </li>
+            	<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> (1) Cursos Agregados</a></li>
+            	<li class="iniciar"><a href="#">Mi Perfil</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
